@@ -1,0 +1,209 @@
+
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0e0e23;
+    font-size: 1rem;
+    margin: 10px;
+    
+}
+
+/* Style the header */
+.caixas {
+
+    background: #1A2049;
+    background: radial-gradient(
+        circle,
+        rgba( 26, 32, 73 ,1)0%,
+        rgb(19, 22, 47, 1)100%
+    );
+    box-shadow: 6px 6px 15px 2px #333d7a;
+    border-radius: 6px;
+    padding: 30px;
+    color: white;   
+    margin: 1rem;
+
+  
+}
+.centralizar{
+    align-self: left;
+}
+header{
+    font-size: 35px;
+    text-align: center;
+}
+.icone{
+    filter:brightness(80%);
+}
+.icone:hover{
+    filter: grayscale(100%);
+}
+section{
+    position: relative;
+}
+
+.form-style{
+    padding: 30px;
+	margin: 50px;
+}
+
+li a:hover {
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #1F2757;
+    color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.form-style  input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    padding: 7px;
+    border: none;
+	border-bottom: 1px solid #73807E;
+    font-size: 14px;
+	margin-bottom: 10px;
+	height: 45px;
+    font-family: 'M PLUS 1', sans-serif;
+    color: #000;
+    font-size: 16px;
+    background-color: rgba(red, green, blue, 0%);
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 29%;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    min-width: 220px;
+    
+
+}
+
+article {
+    float:left;
+    padding: 10px;
+    max-width: 92%;
+    background-color: #f1f1f1;
+    min-width: 200px;
+}
+
+#submit{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    background-color: #0e0e23;
+    filter:brightness(200%);
+    color:white;
+    font-weight: 900;
+}
+#submit:hover{
+    background-color: #0b0b36;
+
+}
+
+
+ul{
+    list-style-type: none;
+}
+.selector {
+	background-color: black;
+}
+
+.selector:hover {
+	background-color: blue;
+}
+/* Style the list inside the menu */
+nav ul li a{
+    list-style-type: none;
+    line-height: 25px;
+    color: rgb(153, 152, 152);
+    text-decoration: none;  
+    font-family: 'M PLUS 1', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;  
+
+}
+.espacamento{
+    line-height: 2rem;
+}
+.photo-profile {
+    width:min-content;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.photo-profile{
+    width: 200px;
+}
+
+footer, header{
+    width: 92%;
+}
+
+select{
+    border-radius: 5px; 
+    font-family: 'Montserrat', sans-serif; 
+    box-shadow: 1px 1px;
+    border: 0;
+}
+#submit{
+    margin-top: 2em;
+    border-radius: 5px; 
+    font-family: 'Montserrat', sans-serif; 
+}
+/* Clear floats after the columns */
+section::after {
+    background: #ccc;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens 
+@media (max-width: 600px) {
+
+    nav, article, footer, header{
+        width: 92%;
+        height: auto;
+    }
+}
+*/
+
+/* Phone */
+@media (max-width: 810px) {
+    nav, article, footer, header, table{
+        width: 92%;
+    }
+}
+/* tablet */
+@media (min-width:811px){
+    nav{
+        width: 28%;
+    }
+    article{
+        width: 64%;
+    }
+    header, footer{
+        width: 96%;
+    }
+}

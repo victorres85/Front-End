@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>HTML - Tabelas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href=".\css\formularios-style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&family=Montserrat:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+	<header  class="caixas">
+		<h2>Curso Front-end - HTML</h2>
+	</header>
+	<section>
+		<div>
+			<nav class="caixas">
+				<h3>Aulas</h3>
+				<ul>
+					<li><a href="homepage.html" .html">Home</a></li>
+					<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+					<li><a href="04-tabelas.html">Tabelas</a></li>
+					<li><a href="06-formularios.html">Formulários</a></li>
+				</ul>
+	
+	
+				<h3>Sites preferidos</h3>
+				<ul>
+					<li><a href="https://ebaconline.com.br/">EBAC</a></li>
+					<li><a href="https://www.packtpub.com/">Packtpub</a></li>
+					<li><a href="https://realpython.com/">Real Python</a></li>
+				</ul>
+	
+				<h3>Redes Sociais</h3>
+				<a href="https://www.linkedin.com/in/victor-almeida-2a260b23/"><img class="icone" alt="LinkedIn"
+						src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjYgKDY3NDkxKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5saW5rZWRpbjwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJsaW5rZWRpbiIgZmlsbD0iIzc3Nzc3NyIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPHBhdGggZD0iTTIwLjQ0NywyMC40NTIgTDE2Ljg5MywyMC40NTIgTDE2Ljg5MywxNC44ODMgQzE2Ljg5MywxMy41NTUgMTYuODY2LDExLjg0NiAxNS4wNDEsMTEuODQ2IEMxMy4xODgsMTEuODQ2IDEyLjkwNSwxMy4yOTEgMTIuOTA1LDE0Ljc4NSBMMTIuOTA1LDIwLjQ1MiBMOS4zNTEsMjAuNDUyIEw5LjM1MSw5IEwxMi43NjUsOSBMMTIuNzY1LDEwLjU2MSBMMTIuODExLDEwLjU2MSBDMTMuMjg4LDkuNjYxIDE0LjQ0OCw4LjcxMSAxNi4xODEsOC43MTEgQzE5Ljc4Miw4LjcxMSAyMC40NDgsMTEuMDgxIDIwLjQ0OCwxNC4xNjYgTDIwLjQ0OCwyMC40NTIgTDIwLjQ0NywyMC40NTIgWiBNNS4zMzcsNy40MzMgQzQuMTkzLDcuNDMzIDMuMjc0LDYuNTA3IDMuMjc0LDUuMzY4IEMzLjI3NCw0LjIzIDQuMTk0LDMuMzA1IDUuMzM3LDMuMzA1IEM2LjQ3NywzLjMwNSA3LjQwMSw0LjIzIDcuNDAxLDUuMzY4IEM3LjQwMSw2LjUwNyA2LjQ3Niw3LjQzMyA1LjMzNyw3LjQzMyBaIE03LjExOSwyMC40NTIgTDMuNTU1LDIwLjQ1MiBMMy41NTUsOSBMNy4xMTksOSBMNy4xMTksMjAuNDUyIFogTTIyLjIyNSwwIEwxLjc3MSwwIEMwLjc5MiwwIDguODgxNzg0MmUtMTYsMC43NzQgOC44ODE3ODQyZS0xNiwxLjcyOSBMOC44ODE3ODQyZS0xNiwyMi4yNzEgQzguODgxNzg0MmUtMTYsMjMuMjI3IDAuNzkyLDI0IDEuNzcxLDI0IEwyMi4yMjIsMjQgQzIzLjIsMjQgMjQsMjMuMjI3IDI0LDIyLjI3MSBMMjQsMS43MjkgQzI0LDAuNzc0IDIzLjIsLTguODgxNzg0MmUtMTYgMjIuMjIyLC04Ljg4MTc4NDJlLTE2IEwyMi4yMjUsMCBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg=="></a>
+				<a href="https://github.com/victorres85"><img class="icone" alt="Github"
+						src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjYgKDY3NDkxKSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5naXRodWI8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iZ2l0aHViIiBmaWxsPSIjNzc3Nzc3Ij4KICAgICAgICAgICAgPHBhdGggZD0iTTEyLDAuMjk3IEM1LjM3LDAuMjk3IDAsNS42NyAwLDEyLjI5NyBDMCwxNy42IDMuNDM4LDIyLjA5NyA4LjIwNSwyMy42ODIgQzguODA1LDIzLjc5NSA5LjAyNSwyMy40MjQgOS4wMjUsMjMuMTA1IEM5LjAyNSwyMi44MiA5LjAxNSwyMi4wNjUgOS4wMSwyMS4wNjUgQzUuNjcyLDIxLjc4OSA0Ljk2OCwxOS40NTUgNC45NjgsMTkuNDU1IEM0LjQyMiwxOC4wNyAzLjYzMywxNy43IDMuNjMzLDE3LjcgQzIuNTQ2LDE2Ljk1NiAzLjcxNywxNi45NzEgMy43MTcsMTYuOTcxIEM0LjkyMiwxNy4wNTUgNS41NTUsMTguMjA3IDUuNTU1LDE4LjIwNyBDNi42MjUsMjAuMDQyIDguMzY0LDE5LjUxMiA5LjA1LDE5LjIwNSBDOS4xNTgsMTguNDI5IDkuNDY3LDE3LjkgOS44MSwxNy42IEM3LjE0NSwxNy4zIDQuMzQ0LDE2LjI2OCA0LjM0NCwxMS42NyBDNC4zNDQsMTAuMzYgNC44MDksOS4yOSA1LjU3OSw4LjQ1IEM1LjQ0NCw4LjE0NyA1LjAzOSw2LjkyNyA1LjY4NCw1LjI3NCBDNS42ODQsNS4yNzQgNi42ODksNC45NTIgOC45ODQsNi41MDQgQzkuOTQ0LDYuMjM3IDEwLjk2NCw2LjEwNSAxMS45ODQsNi4wOTkgQzEzLjAwNCw2LjEwNSAxNC4wMjQsNi4yMzcgMTQuOTg0LDYuNTA0IEMxNy4yNjQsNC45NTIgMTguMjY5LDUuMjc0IDE4LjI2OSw1LjI3NCBDMTguOTE0LDYuOTI3IDE4LjUwOSw4LjE0NyAxOC4zODksOC40NSBDMTkuMTU0LDkuMjkgMTkuNjE5LDEwLjM2IDE5LjYxOSwxMS42NyBDMTkuNjE5LDE2LjI4IDE2LjgxNCwxNy4yOTUgMTQuMTQ0LDE3LjU5IEMxNC41NjQsMTcuOTUgMTQuOTU0LDE4LjY4NiAxNC45NTQsMTkuODEgQzE0Ljk1NCwyMS40MTYgMTQuOTM5LDIyLjcwNiAxNC45MzksMjMuMDk2IEMxNC45MzksMjMuNDExIDE1LjE0OSwyMy43ODYgMTUuNzY0LDIzLjY2NiBDMjAuNTY1LDIyLjA5MiAyNCwxNy41OTIgMjQsMTIuMjk3IEMyNCw1LjY3IDE4LjYyNywwLjI5NyAxMiwwLjI5NyIgaWQ9IlBhdGgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg=="></a>
+
+			</nav>
+		</div>
+		<article class="caixas">
+			<h1>Tabelas</h1>
+
+			<table border="1" width="100%">
+				<thead>
+					<tr>
+						<th>Coluna 1</th>
+						<th>Coluna 2</th>
+						<th>Coluna 3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr align="center">
+						<td>1A</td>
+						<td>1B</td>
+						<td>1C</td>
+					</tr>
+					<tr align="right">
+						<td>2A</td>
+						<td>2B</td>
+						<td>2C</td>
+					</tr>
+					<tr>
+						<td>3A</td>
+						<td colspan="2">3BC</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">Rodapé da tabela</td>
+					</tr>
+				</tfoot>
+			</table>
+
+
+			<h2>Tabela como layout</h2>
+
+			<table width="600">
+				<tr height="90">
+					<td colspan="4" bgcolor="#BBCCEE" align="center"> Cabeçalho</td>
+				</tr>
+				<tr height="300">
+					<td width="20" bgcolor="#0000FF"></td>
+					<td width="60%" bgcolor="#DDDDDD">
+						<h2>Título</h2>
+						<p>fdajfkdj jfdjfodsapodhgdo odihofdfhsdooi</p>
+
+					</td>
+					<td bgcolor="#EEEEEE">Coluna 2</td>
+					<td width="20" bgcolor="#0000FF"></td>
+				</tr>
+				<tr>
+					<td bgcolor="#FF0000" colspan="4" align="center">Rodapé</td>
+				</tr>
+			</table>
+		</article>
+	</section>
+	<footer class="caixas">
+		<p>Desenvolvido por Victor Almeida</p>
+	</footer>
+</body>
+
+</html>
