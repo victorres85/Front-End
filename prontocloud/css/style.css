@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #254159;
+}
+body{
+    font-size: 1.6rem;
+}
+.container{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    border-bottom: 0.1em solid #254159;
+}
+header, nav, article{
+    margin: 2em;
+
+}
+nav{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+    width: 30%;
+    min-width: 150px;
+    background-color: aquamarine;
+    line-height: 1.5em;
+}
+article{
+    float: left;
+    min-width: 350px;
+    line-height: 1.5em;
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: indigo;
+}
+li{
+    padding-left: 0.5em;
+    border-bottom: 0.1em solid white;
+}
+#banner{
+    width: 100%;
+    max-width: 700px;
+    align-items: center;
+}
+h2, h3, h4{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.lista{
+    padding-left: 1em;
+}
+ol li{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+.interesse{
+    margin: 0px;
+    float: left;
+    display: block;
+    padding: 20px;
+    background-color: aqua;
+
+    
+}
+.formulario{
+    margin: 20px;
+    max-width: 400px;
+    letter-spacing: 0.5px;
+    background-color: white;
+    padding: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+input{
+    width: 100%;
+    padding: 1rem;
+}
+#botao{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+}
+footer{
+    margin: none;
+    padding: 20px;
+    background-color: #280044;
+    color: white;
+    font-size: 1.2rem;
+    float: left;
+    width: 100%;
+}
+.menu:hover{
+    background-color: #280044;
+}
+a:hover{
+    color: white;
+
+}
