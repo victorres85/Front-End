@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img id="logo-img" src=".\imagens\ewine.png" alt="logo">
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section id="sobre">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 ">
+                    <h1>E-Wine</h1>
+                    <p>Na e-wine, você aprende tudo sobre vinhos, de forma descontraída e fácil, nossos professores
+                        possuem um conhecimento impar e podem ajudar tanto a aqueles que estão apenas começando no mundo
+                        do vinho como também aos mais experientes que estejam em busca de expandir seus paladares. </p>
+                    <a href="#" class="btn btn-lg btn-success">Botao</a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img src=".\imagens\wine.jpg" alt="imagem exemplo" class="img-fluid">
+                </div>
+
+            </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <img src=".\imagens\wine-is-made.jpg" alt="Como os vinhos são feitos" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Como os vinhos são feitos</h5>
+                            <p>Aprenda todo o processo de produção de vinho do plantil ao engarrafamento e como como
+                                cata etapa influencia no produto final</p>
+                            <a data-bs-toggle="modal" data-bs-target="#modal-1" class="btn btn-primary">Quero saber
+                                mais</a>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src=".\imagens\wine-tasting.jpg" alt="Como Degustar" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Como <s>degustar</s> tomar vinho?</h5>
+                            <p>Aprenda saborear os vinhos que toma, entender seus aromas, sabores e texturas. É muito
+                                mais simples do que parece...</p>
+                            <a data-bs-toggle="modal" data-bs-target="#modal-2" class="btn btn-primary">Quero saber
+                                mais</a>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src=".\imagens\wine-pairing.jpg" alt="Harmonizacao de vinhos" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Como harmonizar vinho e comida?</h5>
+                            <p>Aprenda as principais regras de harmonização, porque vinhos brancos vão melhor com peixe
+                                ou tintos melhor com carnes...</p>
+                            <a data-bs-toggle="modal" data-bs-target="#modal-3" class="btn btn-primary">Quero saber
+                                mais</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessando? Preencha os campos no formul[ario para receber uma cotacao</p>
+                </div>
+                <div class="col">
+                    <form action="" class="form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="nome" placeholder="digite seu nome">
+                        </div>
+                        <div class="input-group">
+                            <input type="email" class="form-control" name="email" placeholder="digite seu e-mail">
+                        </div>
+                        <div class="input-group">
+                            <textarea class="form-control" name="" id="" cols="30" rows="5"></textarea>
+                        </div>
+                        <button class="btn btn-lg btn-success">Solicitar cotacao</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Como os vinhos são feitos</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Mais informações</h6>
+                    <table class="table table-hover table-striped">
+                        <tbody>
+                            <tr>
+                                <td>Duração</td>
+                                <td>5 horas</td>
+                            </tr>
+                            <tr>
+                                <td>Vinhos a serem provados</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>Valor</td>
+                                <td>R$ 300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Como <s>degustar</s> tomar vinho?</h5>
+                    <butto class="btn-close" data-bs-dismiss="modal" aria-label="Close"></butto>
+                </div>
+                <div class="modal-body">
+                    <h6>Mais informações</h6>
+                    <table class="table table-hover table-striped">
+
+                        <tbody>
+                            <tr>
+                                <td>Duração</td>
+                                <td>4 horas</td>
+                            </tr>
+                            <tr>
+                                <td>Vinhos a serem provados</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Valor</td>
+                                <td>R$ 250</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Como harmonizar vinho e comida?</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover table-striped">
+                        </tbody>
+                        <tr>
+                            <td>Duração</td>
+                            <td>6 horas</td>
+                        </tr>
+                        <tr>
+                            <td>Vinhos a serem provados</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Valor</td>
+                            <td>R$ 450</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
